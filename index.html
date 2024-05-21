@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip Calculator App</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">SPLI <br> TTER</h1>
+  </header>
+
+  <section class="calculator-container">
+    <div class="inputs-section">
+      <label for="bill" class="inputs-section__bill-label" >Cuenta</label>
+      <input id="bill" class="inputs-section__bill-input" type="number" placeholder="-">
+
+      <fieldset class="btns">
+        <legend class="btns__legend">Selecciona Propina %</legend>
+        <button class="btns__button btns__button--selected">0%</button>
+        <button class="btns__button">5%</button>
+        <button class="btns__button">10%</button>
+        <button class="btns__button">15%</button>
+        <button class="btns__button">20%</button>
+        <input class="btns__custom" type="number" placeholder="Valor">
+      </fieldset>
+
+      <label for="people" class="inputs-section__people-label" >Número de Personas <span id="alert"></span> </label>
+      <input id="people" class="inputs-section__people-input" type="number" placeholder="1" >
+    </div>
+
+    <div class="result-section">
+      <div class="results">
+
+        <div>
+          <p class="results__tip-amount">Monto Propina</p>
+          <p class="results__tip-person">/ persona</p>
+        </div>
+
+        <p class="results__tip-value">0</p>
+
+        <div>
+          <p class="results__total-amount">Total</p>
+          <p class="results__total-person">/ persona</p>
+        </div>
+
+        <p class="results__total-value">0</p>
+
+      </div>
+      
+      <button class="result-section__reset">Borrar</button>
+
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Coded by <a href="#" target="_blank">Santiago Escobar</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
